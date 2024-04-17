@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify--Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+
+            <div class="home m-1 p-1 bg-grey rounded">
+                <div class="logo ">
+                    <img class="invert pointer" src="logo.svg" alt="Logo">
+                </div>
+                <ul>
+                    <li class="pointer"><img class="invert change-col " src="home.svg" alt="Home">Home</li>
+                    <li class="pointer"><i class="fa-solid fa-magnifying-glass" alt="Search"></i>Search</li>
+                </ul>
+            </div>
+            <div class="library p-1 m-1 felx space-between bg-grey rounded">
+                <div class="heading flex item-center">
+                    <img class="invert pointer" src="yourlibrary.svg" alt="Library">
+                    <h2 class="pointer">Your Library</h2>
+                    <div class="plus pointer"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="songlist  flex flex-drn ">
+
+                </div>
+                <div class="main"></div>
+                <div class="footer m-1 p-1 bg-grey">
+                    <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/" id="" data-encore-id="textLink">Safety
+                        &amp; Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""
+                        data-encore-id="textLink">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""
+                        data-encore-id="textLink">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                        data-encore-id="textLink">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/" id=""
+                        data-encore-id="textLink">Accessibility</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="right flex flex-drn space-between m-1 bg-grey rounded">
+            <div class="header  flex space-between p-2 bg-lightgrey rounded">
+                <div class="nav flex  ">
+                    <i class="sliding-arrow rounded-2 pointer bg-black fa-solid fa-chevron-left"></i>
+                    <i class="sliding-arrow rounded-2  pointer bg-black fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="button flex gap-1">
+                    <button class=" rounded-3 signup pointer btn">Signup</button>
+                    <button class="btn login rounded-3 pointer ">Login</button>
+                </div>
+            </div>
+            <div class="popular-artist">
+                <h1 class="p-1">Popular Artist </h1>
+                <div class="card-container flex  p-1">
+                    <div class="card flex flex-drn  rounded  ">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                        <img class="artist-pic rounded-2" src="/spotify-images/asset 0.jpeg" alt="">
+                        <h2 class="artist-name">Anirudh Ravichander</h2>
+                        <h3 class="artist">Artist</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="songbutton  flex flex-drn   rounded  ">
+                    <div class="song-controling  flex">
+                        <div class="songinfo "> </div>
+                        <div class="controls gap-1 flex ">
+                            <i class="fa-solid pointer fa-backward-step"></i>
+                            <i id="playpause" class="pointer fa-solid fa-play"></i>
+                            <i class="fa-solid pointer fa-forward-step"></i>
+                        </div>
+                        <div class="duration"></div>
+                    </div>
+
+                    <div class=" song-player p-1 flex justify-center item-center flex ">
+                        <div class="playing-bar pointer ">
+                            <div class="dot pointer"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js "></script>
+    <script src="https://kit.fontawesome.com/adb4aacd1b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>     

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.left{
+    width: 25vw;
+    height: 100vh;
+    
+}
+.right{
+    width: 75vw;
+}
+.home{
+    padding: 10px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo img{
+    width: 120px;
+}
+.home ul li{
+    align-items: center;
+    display: flex;
+    width: 24.01px;
+    height: 24.6px;
+    margin-block: 7px;
+    gap: 10px;
+    padding-top:14px ;
+} 
+.home ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.home ul li i{
+    font-size: 1.5rem;
+}
+.library{
+    overflow: hidden;
+    height: 78vh;
+}
+.heading{
+    gap: 20px;
+    width: 100%;
+    font-family: "Roboto",sans-serif;
+}
+.heading img{
+    width: 26.01px;
+}
+.plus{
+    justify-content: end;
+    width: 136px;
+    text-align: end;
+    font-size: 1.3rem;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    line-height: 20px;
+    outline: none;
+    width: 100%;
+}
+.footer a{
+    text-decoration: none;
+    color: #a7a7a7;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.footer div a span{
+    
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 400;
+   
+
+}
+.item-center{
+    padding: 20px 0;
+}
+.nav{
+    
+    font-size: 13.33px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.songlist{
+    overflow: scroll;
+    height: 70%;
+    padding: 10px 5px;
+    gap: 20px; 
+    align-items: center;
+    
+}
+.song-detail:hover{
+    cursor: pointer;
+}
+.pointer:hover{
+    color: #b3b3b3;
+}
+.song-detail{
+    height: 200px;
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: 3px 3px 5px black;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.song-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.3rem;
+    width: 70%;
+    height: 40px;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.sliding-arrow{
+    height: 38px;
+    line-height: 37px !important;
+    width: 38px;
+    text-align: center;
+}
+.signup{
+    background-color: transparent;
+    color: #ffffff;
+}
+.card-container{
+    height: 70vh;
+    width: 100%;
+    gap: 10px;
+    overflow-y: scroll;
+    /* border: 2px solid green; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.card{
+    height: 250px;
+   width: 200px;
+   align-items: center;
+   padding: 10px ;
+   background-color:#252525;
+   position: relative;
+    
+
+}
+.song-controling{
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+}
+.songinfo{
+    width: 20%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+.duration{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.controls{
+    width: auto;
+}
+.artist-pic{
+    width: 100%;
+    object-fit: contain;
+}
+.artist-name{
+    width: 100%;
+    padding: 5px 0 5px 0px;
+    font-size: 1.1rem;
+    text-align: start;
+    font-weight: 500;
+    color: white;
+}
+.artist{
+    width: 100%;
+    color: #a7a7a7;
+    padding: 5px 0 5px 16px;
+    font-family: "robota",sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background-color: #104C10;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+}
+.play-button:hover{
+    bottom: 80px;
+    right: 10px;
+    opacity: 1;
+}
+.play-button i{
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.8rem;
+}
+
+.songbutton{
+    position: relative;
+    font-size: 1.4rem;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(31, 148, 31);
+    height: auto;
+    width: 100%;
+    border:  3px solid orange   ;
+
+}
+
+.song {
+    width: 100%;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px 0 0 0 ;
+    border-radius: 8px;
+}
+.song-name{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "poppins";
+}
+.song-player{
+    width: 100%;
+ 
+}
+.playing-bar{
+    position:relative;
+    width: 100%;
+    height: 6px;
+    background-color:rgb(255, 255, 255) ;
+    border-radius:5px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    transition: all 0.3s;
+}
+.dot{
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 15px;
+    width: 15px;
+    color: aliceblue;
+    border: 3px solid rgb(255 255 255);
+    transition: all 0.8s;
+    /* transition: all 0.8s ; */
+}

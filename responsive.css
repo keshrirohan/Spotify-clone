@@ -1,0 +1,9 @@
+@media screen and (max-width:1024px){
+    .dot{
+        border: 5px solid green;
+    }
+    .song-name{
+        font-size: 0.8rem;
+    }
+   
+}

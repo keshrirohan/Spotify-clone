@@ -1,0 +1,131 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.bg-lightgrey{
+   background-color: #00000050;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+ border-radius: 7px;
+}
+.rounded-2{
+    border-radius: 50%;
+}
+.rounded-3{
+    border-radius: 20px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 8px;
+}
+.p-2{
+    padding: 15px;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-drn{
+    flex-direction: column;
+}
+.btn{
+    width: 85px;
+    outline:none;
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: translateY(5px);
+    color: gray;
+}
+.gap-1{
+    gap: 16px;
+}
+.pointer{
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Light gray thumb color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333; /* Dark track color */
+    border-radius: 5px;
+}
+
+/* Custom scrollbar arrows */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    background-color: #555; /* Darker container background color */
+    display: block;
+}
+
+/* Arrow icons */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Up arrow */
+::-webkit-scrollbar-button:start:decrement:before {
+    content: '▲';
+    display: block;
+    font-size: 12px;
+    color: #ddd; /* Light gray arrow color */
+    text-align: center;
+}
+
+/* Down arrow */
+::-webkit-scrollbar-button:end:increment:before {
+    content: '▼';
+    display: block;
+    font-size: 12px;
+    color: #ddd; /* Light gray arrow color */
+    text-align: center;
+}
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
